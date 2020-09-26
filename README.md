@@ -15,8 +15,6 @@ _Rhino runs on a_ [_zoo server_](https://wiki.mcneel.com/zoo/home) _; therefore,
 3. Now launch Rhino. Once Rhino is running, you can disconnect from the server. But anytime you want to open a new rhino window, you must be connected to the VPN.
 
 
-
-<br />
 # UR Documentation
 # **Part 1: Download Anaconda:**
 
