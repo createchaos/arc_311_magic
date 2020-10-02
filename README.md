@@ -1,6 +1,6 @@
-<h1>Rhino Documentation</h1>
+<h1>Rhino6 Documentation</h1>
 
-_Listed below is the Documentation you need to install and run Rhino at home._
+_Listed below is the Documentation you need to install and run Rhino6 at home._
 
 <h3> Downloading Rhino: </h3>
 
@@ -16,6 +16,7 @@ _Rhino runs on a_ [_zoo server_](https://wiki.mcneel.com/zoo/home) _; therefore,
 
 
 # UR Documentation
+**Whenever this documentation references Rhino it is specificly referring to Rhino6**
 # **Part 1: Download Anaconda:**
 
 _In this part you will download anaconda a python distribution. By downloading anaconda you receive everything you need to run python. If you are wondering what python is, it is a programing language. Here is python.org&#39;s_ [_definition_](https://www.python.org/doc/essays/blurb/)_._
