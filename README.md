@@ -114,8 +114,8 @@ _In this part you will download github desktop. You will use this to get some re
     1) to file and select clone repository
     2) In the new window select the URL option
     3) Under repository URL type <br/>
-        First time: [https://github.com/augmentedfabricationlab/ur\_online\_control.git](https://github.com/augmentedfabricationlab/ur_online_control.git) <br/> _These files will help you connect to the robots_ <br/>
-        Second time: [https://github.com/augmentedfabricationlab/assembly\_information\_model](https://github.com/augmentedfabricationlab/assembly_information_model) <br/> _These files will help with creating the robot inside rhino_
+        First time: [https://github.com/createchaos/ur_online_control_speckle](https://github.com/createchaos/ur_online_control_speckle) <br/> _These files will help you connect to the robots_ <br/>
+        Second time: [https://github.com/createchaos/assembly_information_model](https://github.com/createchaos/assembly_information_model) <br/> _These files will help with creating the robot inside rhino_
     4) Make sure that the local path is correct. Depending on which repository you are downloading it should look something like ```C:\Users\name\Documents\GitHub\ur_online_control (or assembly_information_model)``` in Windows and ```\Users\name\Documents\GitHub\assembly_information_model``` in Mac
     5) _(Optional)_ If you created a subfolder change path to ```...\Documents\GitHub\name of your subfolder\ur_online_control (same with assembly_information_model)``` <br/>
     <img src="screenGIFs/git clone.gif" width="60%"> <br/>
