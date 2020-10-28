@@ -48,9 +48,9 @@ _In this part you will use the command prompt (terminal if on mac) to install co
 
 ```console
 conda config --add channels conda-forge
-conda remove --name your_env_name --all
-conda create -n your_env_name python=3.6 compas compas_fab --yes
-conda activate your_env_name
+conda remove --name arc_311 --all
+conda create -n arc_311 python=3.6 compas=0.15.6 compas_fab=0.11.0 --yes
+conda activate arc_311
 python -m compas_rhino.install
 python -m compas_fab.rhino.install -v 6.0
 ```
