@@ -76,33 +76,35 @@ python -m compas_fab.rhino.install -v 6.0
 ```
 
 For the last two steps you will need to allow the anaconda prompt/terminal to make changes to local rhino files. So make sure you are logged in as an administrator.
-<img src="screenGIFs/download compas and compas_fab.gif" width="60%">
 
-_Explained below is what each line is does:_
+<img src="screenGIFs/download compas and compas_fab.gif" width="50%">
 
-```console 
-(base) conda config --add channels conda-forge 
-```
-Adds the package conda-forge: _[https://conda-forge.org/#about](https://conda-forge.org/#about)_ <br/> <br/> 
-```console 
-(base) conda remove --name your_env_name --all 
-``` 
-Removes any environment with that name in preparation to create new one with updated version of python compas and compas_fab <br/>  <br/>
- ```console 
- (base) conda create -n your_env_name python=3.6 compas compas_fab --yes 
- ``` 
-Creates a new python environment and installs compas and compas_fab. Python environments are helpful because they store everything you need for a certain project. In this case, in our project our dependencies are compas and compas_fab so we include them in our environment. If we were to start another project we could then create a new environment that includes everything we need for that project.<br/>  <br/>
- ```console 
- (base) conda activate your_env_name
- ``` 
-Actives the environment created in the previous step  <br/><br/> 
-   ```console 
-   (your_env_name) python -m compas_rhino.install 
-   (your_env_name) python -m compas_fab.rhino.install -v 6.0 
-   ```
-Installs compas and compas_fab for rhino <br/><br/> 
+    * _Explained below is what each line is does:_
+        ```console 
+        (base) conda config --add channels conda-forge 
+        ```
+        Adds the package conda-forge: _[https://conda-forge.org/#about](https://conda-forge.org/#about)_ <br/> <br/> 
+        ```console 
+        (base) conda remove --name your_env_name --all 
+        ``` 
+        Removes any environment with that name in preparation to create new one with updated version of python compas and compas_fab <br/>  <br/>
+         ```console 
+         (base) conda create -n your_env_name python=3.6 compas compas_fab --yes 
+         ``` 
+        Creates a new python environment and installs compas and compas_fab. Python environments are helpful because they store everything you need for a certain project. In this case, in our project our dependencies are compas and compas_fab so we include them in our environment. If we were to start another project we could then create a new environment that includes everything we need for that project.<br/>  <br/>
+     
+     ```console 
+     (base) conda activate your_env_name
+     ``` 
+     Actives the environment created in the previous step  <br/><br/> 
+     ```console 
+     (your_env_name) python -m compas_rhino.install 
+     (your_env_name) python -m compas_fab.rhino.install -v 6.0 
+     ```
+     Installs compas and compas_fab for rhino <br/><br/> 
 * * *
-3. Finally check to make sure that the installation worked by typing/copying and pasting the following code: <br/>
+
+3. Finally, check to make sure that the installation worked by entering the following lines: <br/>
 
 ```console
 python
@@ -113,7 +115,7 @@ You should see:
 ```console
 '0.11.0';
 ```
-<img src="screenshots/versionCompas.png" width="100%">
+<img src="screenshots/versionCompas.png" width="80%">
 
 _In this step we are starting a python file, adding the package compas\_fab (which we installed in the previous step) and requesting the package&#39;s version. You should have installed the most current package. So a version of 0.11.0 or newer should be printed on the screen._ <br/><br/> 
 
@@ -126,10 +128,10 @@ _In this part you will download github desktop. You will use this to get some re
     1) The proper type of GitHub should appear (i.e. mac, windows x64, etc.) however if it does not just download the appropriate version for your computer.
     2) Click installer for Windows and double click the downloaded zip folder for Mac to install.
     3) Open GitHub desktop.
-    4) If you have an account sign in. If not it is recommended that you make one.
+    4) You don't need to sign in. However, it is recommended that you make an account and sign in.
 
 2) Go to documents and find the GitHub folder
-    1) This is where the repositories at default will be saved
+    1) This is where the repositories at default will be saved by default
     2) If you want you can create a subfolder for the repositories from this class (see part 3. v.). Make sure to not have spaces in the name of the subfolder and try to stay away from special characters as well. These specific characters can cause issues when referencing the paths (as we see in iv.)
 
 3) Now we will clone two repositories that will allow us to us grasshopper and python to communicate to the robots _(To clone each repository it is going to be the same process except for the step iii.)_
@@ -158,6 +160,16 @@ _In this part you will download github desktop. You will use this to get some re
 
 _In part 2 when we downloaded compas and compas\_fab we had to add them to rhino. We now need to do that for the repositories we cloned as currently rhino cannot access them._ 
 
+* For Mac:
+    1. Copy the directory for the two folders that you just downloaded via Github Desktop (Part 3, step 3)
+        * you can select the folder in Finder, and press option+command+c to copy the directory as text
+    2. in the terminal, type: ```pip install -e folder_directory``` for _both_ ur_online_control_speckle and assembly_information_model
+        * do this step _twice_, replacing the folder_directory with the actual directories from step 1.
+    3. in the terminal, type:
+        1. ```python -m compas_rhino.install -p ur_online_control```
+        2. ```python -m compas_rhino.install -p assembly_information_model```
+    4. Done. Now Rhino knows how to access the files you downloaded.
+
 * For Windows:
     1. Open a new Rhino file <img src="screenshots/RhinoLogo.png" width="3%"> <br/>
     2. Type editpythonscript into the command line ![](RackMultipart20200820-4-13h5aym_html_822c8d78f68079ae.png)
@@ -174,15 +186,7 @@ _In part 2 when we downloaded compas and compas\_fab we had to add them to rhino
     5. Finally save the rhino file wherever you want. This makes it so that Rhino remembers the paths.
     6. Done!
 
-* For Mac:
-    1. Copy the directory for the two folders that you just downloaded via Github Desktop (Part 3, step 3)
-        * you can select the folder in Finder, and press option+command+c to copy the directory as text
-    2. in the terminal, type: ```pip install -e <directory>``` for _both_ ur_online_control_speckle and assembly_information_model
-        * do this step twice, replacing the <directory> with the actual directory from step 1.
-    3. in the terminal, type:
-        1. ```python -m compas_rhino.install -p ur_online_control```
-        2. ```python -m compas_rhino.install -p assembly_information_model```
-    4. Done. Now Rhino knows how to access the files you downloaded.
+
         
 # Usage
 Example files are in the example folder.
