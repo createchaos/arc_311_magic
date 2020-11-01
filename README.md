@@ -1,7 +1,7 @@
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
-* [About the Project](#About)
+* [About](#About)
 * [Prerequisites](#Prerequisites)
 * [Setup](#Setup)
     * [Part 1: Anaconda](#Part-1)
