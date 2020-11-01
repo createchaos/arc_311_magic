@@ -158,23 +158,23 @@ _In this part you will download github desktop. You will use this to get some re
 
 _In part 2 when we downloaded compas and compas\_fab we had to add them to rhino. We now need to do that for the repositories we cloned as currently rhino cannot access them._ 
 
-A. For Windows:
-    1) Open a new Rhino file <img src="screenshots/RhinoLogo.png" width="10%"> <br/>
-    2) Type editpythonscript into the command line ![](RackMultipart20200820-4-13h5aym_html_822c8d78f68079ae.png)
+* For Windows:
+    1. Open a new Rhino file <img src="screenshots/RhinoLogo.png" width="3%"> <br/>
+    2. Type editpythonscript into the command line ![](RackMultipart20200820-4-13h5aym_html_822c8d78f68079ae.png)
         1) This will open the python\_editor.
-    3) Go to tools → options
-    4) Add each src file from each of the two repositories installed
-        1) To do so hit add to search path (circled in red in photo) <br/> <img src="screenshots/fileSearch.png" width="40%"> <br/>
-        2) Navigate through your folders to find one of the two repositories.
-        3) Click on the repositories folder. Find and select the src folder and hit okay
-        4) This should look like \Users\name\Documents\GitHub\ur_online_control\src or \Users\name\Documents\GitHub\assembly_information_mode\src
-        5) Then using the up arrow bring that path to the top of the list
-        6) Repeat with the second repository <br/>
+    3. Go to tools → options
+    4. Add each src file from each of the two repositories installed
+        1. To do so hit add to search path (circled in red in photo) <br/> <img src="screenshots/fileSearch.png" width="40%"> <br/>
+        2. Navigate through your folders to find one of the two repositories.
+        3. Click on the repositories folder. Find and select the src folder and hit okay
+        4. This should look like \Users\name\Documents\GitHub\ur_online_control\src or \Users\name\Documents\GitHub\assembly_information_mode\src
+        5. Then using the up arrow bring that path to the top of the list
+        6. Repeat with the second repository <br/>
         <img src="screenGIFs/adding file to rhino.gif" width="60%"> <br/>
-    5) Finally save the rhino file wherever you want. This makes it so that Rhino remembers the paths.
-    6) Done!
+    5. Finally save the rhino file wherever you want. This makes it so that Rhino remembers the paths.
+    6. Done!
 
-B. For Mac:
+* For Mac:
     1. Copy the directory for the two folders that you just downloaded via Github Desktop (Part 3, step 3)
         * you can select the folder in Finder, and press option+command+c to copy the directory as text
     2. in the terminal, type: ```pip install -e <directory>``` for _both_ ur_online_control_speckle and assembly_information_model
@@ -184,3 +184,5 @@ B. For Mac:
         2. ```python -m compas_rhino.install -p assembly_information_model```
     4. Done. Now Rhino knows how to access the files you downloaded.
         
+# Usage
+Example files are in the example folder.
