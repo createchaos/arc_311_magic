@@ -167,4 +167,4 @@ _In part 2 when we downloaded compas and compas\_fab we had to add them to rhino
 
         
 # Usage
-Example files are in the example folder.
+Example files are in the [example folder](https://github.com/createchaos/arc_311_magic/tree/master/examples).
