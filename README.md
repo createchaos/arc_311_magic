@@ -137,7 +137,8 @@ _In this part you will download github desktop. You will use this to get some re
 ## **Part 4: Add the files to rhino** <a name="Part-4"></a>
 
 _In part 2 when we downloaded compas and compas\_fab we had to add them to rhino. We now need to do that for the repositories we cloned as currently rhino cannot access them._ 
-
+* Make sure you're in the arc_311 conda environment. Type:
+```conda activate arc_311```
 * For Mac:
     1. Copy the directory for the two folders that you just downloaded via Github Desktop (Part 3, step 3)
         * you can select the folder in Finder, and press option+command+c to copy the directory as text
